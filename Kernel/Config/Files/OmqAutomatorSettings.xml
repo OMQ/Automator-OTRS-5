@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_config version="1.0" init="Application">
+  <ConfigItem Name="OMQ::Automator::Settings::URL" Required="1" Valid="1">
+    <Description Translatable="1">URL of the OMQ server.</Description>
+    <Group>OMQ</Group>
+    <SubGroup>Automator</SubGroup>
+    <Setting>
+      <String></String>
+    </Setting>
+  </ConfigItem>
+
+  <ConfigItem Name="OMQ::Automator::Settings::Apikey" Required="1" Valid="1">
+    <Description Translatable="1">Automator Apikey.</Description>
+    <Group>OMQ</Group>
+    <SubGroup>Automator</SubGroup>
+    <Setting>
+      <String></String>
+    </Setting>
+  </ConfigItem>
+</otrs_config>

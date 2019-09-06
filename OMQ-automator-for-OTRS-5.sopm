@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_package version="1.0">
+    <!-- nofilter(TidyAll::Plugin::OTRS::SOPM::Name) -->
+    <Name>OMQ automator for OTRS 5</Name>
+    <Version>0.0.0</Version>
+
+    <Framework>5.0.x</Framework>
+
+    <Vendor>OMQ GmbH</Vendor>
+    <URL>http://www.omq.de/</URL>
+    <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
+    <Description Lang="en">OMQ automator for OTRS 5</Description>
+    <Description Lang="de">OMQ automator for OTRS 5</Description>
+
+    <Filelist>
+        <File Permission="644" Location="Kernel/Config/Files/OmqAutomatorSettings.xml" />
+        <File Permission="644" Location="Kernel/Config/Files/OmqAutomatorDaemonCronTask.xml" />
+
+        <File Permission="644" Location="Kernel/Config/Files/ZZZOmqAutomatorRepository.pm" />
+
+        <File Permission="644" Location="Kernel/System/OMQ/Automator/Util.pm" />
+        <File Permission="644" Location="Kernel/System/OMQ/Automator/Constants.pm" />
+        <File Permission="644" Location="Kernel/System/OMQ/Automator/OmqAutomatorCheckActions.pm" />
+    </Filelist>
+
+    <IntroInstall Type="post" Lang="en" Title="Thank you!">Enjoy the OMQ automator</IntroInstall>
+    <IntroInstall Type="post" Lang="de" Title="Vielen Dank!">Viel Spaß mit dem OMQ automator</IntroInstall>
+</otrs_package>

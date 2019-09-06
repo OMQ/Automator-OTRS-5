@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_config version="1.0" init="Application">
+  <ConfigItem Name="Daemon::SchedulerCronTaskManager::Task###OmqAutomatorCheckActions" Required="0" Valid="1" ConfigLevel="100">
+    <Description Translatable="1">Check OMQ auto responder ticket status.</Description>
+    <Group>Daemon</Group>
+    <SubGroup>Daemon::SchedulerCronTaskManager::Task</SubGroup>
+    <Setting>
+      <Hash>
+        <Item Key="TaskName">OmqAutomatorCheckActions</Item>
+        <Item Key="Schedule">*/5 * * * *</Item> <!-- default each five minutes -->
+        <Item Key="Module">Kernel::System::OMQ::Automator::OmqAutomatorCheckActions</Item>
+        <Item Key="Function">Run</Item>
+        <Item Key="MaximumParallelInstances">1</Item>
+      </Hash>
+    </Setting>
+  </ConfigItem>
+</otrs_config>
